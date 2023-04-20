@@ -1,0 +1,9 @@
+name: MT-Machines
+version: '${project.version}'
+authors: [ TheBathDuck ]
+description: Omdat ik mcdev de 5 euro niet gun, ouwe jatters!
+main: nl.duckycraft.mtmachines.MachinePlugin
+commands:
+  serialize: {}
+  machine:
+    aliases: [ mtmachine, mt-machine, minetopia-machine, machines ]
