@@ -39,8 +39,6 @@ Commands:
 ##
 ![Spigot Downloads](https://img.shields.io/spiget/downloads/109391?style=for-the-badge)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
 ## Bekijk de video (klik op de afbeelding)
 [![Bekijk de video](https://cdn.discordapp.com/attachments/942180774386470963/1098717148655911002/1f12df65929f91c9658e052f12ff490c.png)](https://www.youtube.com/watch?v=9To7ohpFdXM)
 
