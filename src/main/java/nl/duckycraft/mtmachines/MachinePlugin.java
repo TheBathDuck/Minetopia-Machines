@@ -2,11 +2,9 @@ package nl.duckycraft.mtmachines;
 
 import lombok.Getter;
 import nl.duckycraft.mtmachines.commands.MachineCommand;
-import nl.duckycraft.mtmachines.commands.SerializeCommand;
 import nl.duckycraft.mtmachines.listeners.MachineBreakListener;
 import nl.duckycraft.mtmachines.listeners.MachineInteractionListener;
 import nl.duckycraft.mtmachines.manager.MachineManager;
-import nl.duckycraft.mtmachines.menus.MachineMenu;
 import nl.duckycraft.mtmachines.utils.ConfigurationFile;
 import nl.duckycraft.mtmachines.utils.GUIHolder;
 import org.bukkit.Bukkit;
@@ -34,7 +32,6 @@ public final class MachinePlugin extends JavaPlugin {
         manager = new MachineManager();
         manager.init();
 
-        getCommand("serialize").setExecutor(new SerializeCommand());
         getCommand("machine").setExecutor(new MachineCommand());
 
         Arrays.asList(
@@ -49,7 +46,7 @@ public final class MachinePlugin extends JavaPlugin {
         manager.getLoadedMachines().values().forEach(machine -> {
             manager.save(machine);
             BukkitTask task = machine.getMachineTask();
-            if(task != null && !task.isCancelled()) {
+            if (task != null && !task.isCancelled()) {
                 task.cancel();
             }
             machine.removeHologram();
