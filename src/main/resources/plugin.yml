@@ -1,6 +1,6 @@
 name: MT-Machines
 version: '${project.version}'
-authors: [ TheBathDuck ]
+authors: [ TheBathDuck, Willem5691 ]
 description: Omdat ik mcdev de 5 euro niet gun, ouwe jatters!
 main: nl.duckycraft.mtmachines.MachinePlugin
 commands:
